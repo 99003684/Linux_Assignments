@@ -28,8 +28,8 @@ int main()
 	char buf[maxlen];
 
     //write from fd[0] to fd[1]
-	nbytes_r = read(fd,buf,maxlen);
-    nbytes_w = write(fd, nbytes_r, maxlen);
+	nbytes_r = read(fd[0],buf,maxlen);
+    nbytes_w = write(fd[1], buf, nbytes_r);
 
     //checks for errors and exit
 	if(nbytes_r<0)
@@ -43,7 +43,6 @@ int main()
 		exit(3);
 	}
     // show the outputs
-	write(1,buf,nbytes_r);
     printf("written successfully, nbytes_w = %d\n",nbytes_w);
 	close(fd[0]);
     close(fd[1]);
