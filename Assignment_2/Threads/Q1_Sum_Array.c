@@ -44,8 +44,8 @@ int main(){
 
     pthread_create(&pt1,NULL,sum_array,"SUM100");
 	pthread_create(&pt2,NULL,sum_array,"SUM200");
-    pthread_create(&pt3,NULL,sum_array,"sum300");
-    pthread_create(&pt4,NULL,sum_array,"sum400");
+    pthread_create(&pt3,NULL,sum_array,"SUM300");
+    pthread_create(&pt4,NULL,sum_array,"SUM400");
 	pthread_create(&pt5,NULL,sum_array,"SUM500");
     pthread_join(pt1,&status);
 	pthread_join(pt2,NULL);
@@ -54,7 +54,7 @@ int main(){
     pthread_join(pt5,NULL);
 
 
-    printf("thread exit status is :%ld\n", (long)status);
+//     printf("thread exit status is :%ld\n", (long)status);
 	printf("main--thank you\n");
 	return 0;
  
