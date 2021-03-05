@@ -1,5 +1,5 @@
-Build : circular_stack.c
-	gcc circular_stack.c
+Build : circular_buffer.c
+	gcc circular_buffer.c -lpthread
 
 run : Build
 
