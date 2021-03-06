@@ -1,4 +1,4 @@
-# Assignment - 2
+# Assignment - 3
 
 1. Implement producer consumer problem using Stack operations using semaphores
 
