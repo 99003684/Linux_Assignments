@@ -1,4 +1,4 @@
-/* mini shell that can take 6 arguments*/
+
 #include<stdio.h>
 #include<unistd.h>
 #include<string.h>
@@ -21,7 +21,7 @@ int main()
     }
     if(ret==0)
     {
-        cmd_exec=execlp(common,common);
+        cmd_exec=execlp(common,common,NULL);
         if(cmd_exec<0)
         {
             perror("execlp");

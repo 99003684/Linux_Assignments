@@ -1,3 +1,0 @@
-Hi
-Count the lines words and characters
-regards manisha
