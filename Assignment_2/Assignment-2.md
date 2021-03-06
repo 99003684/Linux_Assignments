@@ -1,4 +1,4 @@
-# Assignment - 1 => OS Programming
+# Assignment - 2 => OS Programming
 
 ## System Calls and Signals
 1. Write a program to copy one file contents to other using open,read,write,close system calls (like cp command, which takes source, destination files as cmd line args). 
